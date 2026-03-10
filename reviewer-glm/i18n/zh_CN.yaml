@@ -1,0 +1,100 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+plugin:
+  glm_reviewer:
+    backend:
+      info:
+        name:
+          other: GLM 内容审核
+        description:
+          other: 使用 GLM AI 自动审核和过滤问题、答案和评论中的垃圾内容。
+      config:
+        api_key:
+          title:
+            other: API 密钥
+          label:
+            other: API 密钥
+          description:
+            other: 用于身份验证的 GLM API 密钥
+        api_timeout:
+          title:
+            other: API 超时（秒）
+          label:
+            other: API 超时
+          description:
+            other: 等待 API 响应的最长时间
+        max_content_length:
+          title:
+            other: 最大内容长度
+          label:
+            other: 最大内容长度
+          description:
+            other: 要审核的内容的最大长度（字符）
+        cache_ttl:
+          title:
+            other: 缓存 TTL（秒）
+          label:
+            other: 缓存 TTL
+          description:
+            other: 缓存审核结果的生存时间
+        cache_max_size:
+          title:
+            other: 缓存最大大小
+          label:
+            other: 缓存最大大小
+          description:
+            other: 缓存中存储的最大项目数
+        rate_limit_rps:
+          title:
+            other: 速率限制（每秒请求数）
+          label:
+            other: 速率限制（RPS）
+          description:
+            other: 每秒最大 API 请求数
+        max_retries:
+          title:
+            other: 最大重试次数
+          label:
+            other: 最大重试次数
+          description:
+            other: 失败请求的最大重试次数
+        review_question:
+          title:
+            other: 启用问题审核
+          label:
+            other: 审核问题
+        review_answer:
+          title:
+            other: 启用答案审核
+          label:
+            other: 审核答案
+        review_comment:
+          title:
+            other: 启用评论审核
+          label:
+            other: 审核评论
+        spam_filtering:
+          title:
+            other: 垃圾内容过滤操作
+          review:
+            other: 标记为待审核
+          delete:
+            other: 自动删除
+      comment:
+        need_review:
+          other: 此内容已被 GLM AI 标记为待审核

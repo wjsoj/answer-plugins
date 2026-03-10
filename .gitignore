@@ -44,8 +44,7 @@ tmp/
 temp/
 *.tmp
 
-# Plugin build directories
-reviewer-*/
+# Plugin build directories (except source code)
 */build/
 */dist/
 

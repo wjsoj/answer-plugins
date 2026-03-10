@@ -1,0 +1,100 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+plugin:
+  glm_reviewer:
+    backend:
+      info:
+        name:
+          other: GLM Content Reviewer
+        description:
+          other: Use GLM AI to automatically review and filter spam content in questions, answers, and comments.
+      config:
+        api_key:
+          title:
+            other: API Key
+          label:
+            other: API Key
+          description:
+            other: Your GLM API key for authentication
+        api_timeout:
+          title:
+            other: API Timeout (seconds)
+          label:
+            other: API Timeout
+          description:
+            other: Maximum time to wait for API response
+        max_content_length:
+          title:
+            other: Maximum Content Length
+          label:
+            other: Max Content Length
+          description:
+            other: Maximum length of content to review (characters)
+        cache_ttl:
+          title:
+            other: Cache TTL (seconds)
+          label:
+            other: Cache TTL
+          description:
+            other: Time to live for cached review results
+        cache_max_size:
+          title:
+            other: Cache Maximum Size
+          label:
+            other: Cache Max Size
+          description:
+            other: Maximum number of items to store in cache
+        rate_limit_rps:
+          title:
+            other: Rate Limit (Requests Per Second)
+          label:
+            other: Rate Limit (RPS)
+          description:
+            other: Maximum number of API requests per second
+        max_retries:
+          title:
+            other: Maximum Retries
+          label:
+            other: Max Retries
+          description:
+            other: Maximum number of retry attempts for failed requests
+        review_question:
+          title:
+            other: Enable Question Review
+          label:
+            other: Review Questions
+        review_answer:
+          title:
+            other: Enable Answer Review
+          label:
+            other: Review Answers
+        review_comment:
+          title:
+            other: Enable Comment Review
+          label:
+            other: Review Comments
+        spam_filtering:
+          title:
+            other: Spam Filtering Action
+          review:
+            other: Mark for Review
+          delete:
+            other: Auto Delete
+      comment:
+        need_review:
+          other: This content has been flagged for review by GLM AI
