@@ -1,4 +1,4 @@
-module github.com/apache/answer-plugins/reviewer-glm
+module github.com/wjsoj/answer-plugins/reviewer-glm
 
 go 1.23.0
 
