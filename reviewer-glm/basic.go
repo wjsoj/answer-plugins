@@ -32,7 +32,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/wjsoj/answer-plugins/reviewer-glm/i18n"
+	"github.com/apache/answer-plugins/reviewer-glm/i18n"
 	"github.com/apache/answer-plugins/util"
 	"github.com/apache/answer/plugin"
 	myI18n "github.com/segmentfault/pacman/i18n"
