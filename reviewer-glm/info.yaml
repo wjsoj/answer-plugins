@@ -18,5 +18,5 @@
 slug_name: glm_reviewer
 type: reviewer
 version: 1.0.0
-author: Answer Community
-link: https://github.com/apache/answer-plugins/tree/main/reviewer-glm
+author: wjsoj
+link: https://github.com/wjsoj/answer-plugins/tree/main/reviewer-glm
